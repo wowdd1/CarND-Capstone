@@ -32,7 +32,7 @@ that we have created in the `__init__` function.
 '''
 
 import collections as cl
-Gains = cl.namedtuple('Gains', 'Kp Ki Kd')  # Data structure for holding PID gains
+Gains = cl.namedtuple('Gains', 'Kp Ki Kd')
 
 class DBWNode(object):
     def __init__(self):
@@ -84,8 +84,6 @@ class DBWNode(object):
     def loop(self):
         rate = rospy.Rate(10) # 50Hz
         while not rospy.is_shutdown():
-            # TODO: Get predicted throttle, brake, and steering using `twist_controller`
-            # You should only publish the control commands if dbw is enabled
 
             if self.twist_cmd is None or self.current_velocity is None:
                 continue

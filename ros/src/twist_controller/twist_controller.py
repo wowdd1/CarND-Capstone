@@ -11,7 +11,6 @@ MAX_SPEED = 10.0 # for road test
 
 class Controller(object):
     def __init__(self, *args, **kwargs):
-        # TODO: Implement
         self.throttle_pid = PID(kwargs['throttle_gains'])
         self.yaw_control = YawController(kwargs['wheel_base'], kwargs['steer_ratio'],
                                          kwargs['min_speed'], kwargs['max_lat_accel'],
@@ -21,15 +20,8 @@ class Controller(object):
         self.last_t = None
         self.filter = LowPassFilter(0.2,0.1)
 
-    '''
-    Params:
-    target_v - desired linear velocity
-    target_w - desired angular velocity
-    current_v - current linear velocity
-    dbw_enabled - drive by wire enabled (ignore error in this case)
-    '''
+
     def control(self, target_v, target_w, current_v, dbw_enabled):
-        # Get throttle value from controller
         if self.last_t is None or not dbw_enabled:
             self.last_t = time.time()
             return 0.0, 0.0, 0.0
@@ -45,7 +37,6 @@ class Controller(object):
         else:
             brake = 0.0
 
-        # # Special case for stopping
         if abs(target_v.x) < 0.1:
             brake = 12.0
 
