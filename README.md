@@ -8,7 +8,7 @@ This is the project repo for the final project of the Udacity Self-Driving Car N
       @ckyrkou  Christos Kyrkou  ckyrkou@gmail.com   Traffic Light detection
 
   Team Member: 
-      @wowdd1  Dan Zhao  developergf@gmail.com  DBW Node
+      @wowdd1  Dan Zhao  developergf@gmail.com  twist controller
       @hello2all  Ted Tian  point follower
       @jzhang  Jiong Zhang  wszjzhang@gmail.com  Traffic Light detection
       @lacfo  Liyuan Liu  liyuanlacfo1990@gmail.com  planning
