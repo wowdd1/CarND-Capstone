@@ -10,7 +10,7 @@ This is the project repo for the final project of the Udacity Self-Driving Car N
 * Team Member: 
   * @wowdd1  developergf@gmail.com  twist controller
   * @hello2all point follower
-  * @jzhang  wszjzhang@gmail.com  Traffic Light detection
+  * @jzhang  wszjzhang@gmail.com  Traffic Light Classifier
   * @lacfo  liyuanlacfo1990@gmail.com  planning
 
 ### Native Installation
